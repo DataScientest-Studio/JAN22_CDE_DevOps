@@ -21,3 +21,6 @@ def test():
 def post_test():
     return 25
 
+@app.get("/health")
+def health():
+    return {"health":42}
