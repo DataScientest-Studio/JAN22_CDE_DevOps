@@ -20,7 +20,7 @@ def test_post():
 
 def test_health():
     r = requests.get("http://localhost:8000{}".format("/health"))
-    assert r.status_code==200
+    assert r.status_code==205
     assert "health" in r.json()
 
 
